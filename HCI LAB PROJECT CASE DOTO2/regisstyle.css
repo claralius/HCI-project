@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Trajan;
+    src: url(Trajan\ Pro.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Trajan;   
+}
+
+body{
+    display: flex;
+    padding: 10px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bg1.2.png);
+}
+
+.container{
+    max-width: 800px;
+    padding: 25px 30px;
+    border-radius: 10px;
+    width: 100%;
+    background: transparent;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 687px;
+    background-color: rgb(117, 8, 8);
+}
+
+.container form .details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+    color: white;
+}
+
+form .details .input{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+
+.details .input .det{
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.details .input input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(117, 8, 8);
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom-width: 3px;
+}
+
+
+form .createbtn{
+    height: 40px;
+    margin: 40px 0;
+}
+
+form .homebtn{
+    height: 40px;
+    margin: 40px 0;
+}
+
+form .createbtn button{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    background-color: rgb(117, 8, 8);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+form .homebtn input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    background-color: rgb(117, 8, 8);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+form .createbtn button:hover{
+    background-color:rgb(51, 5, 5);
+}
+
+form .homebtn input:hover{
+    background-color:rgb(51, 5, 5);
+}
+
+@media (max-width: 800px){
+    .container{
+        max-width: 100%;
+    }
+    form .details .input{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form .details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+form .logo img{
+    width: 20%;
+    height: auto;
+}
+
+form .trademarks{
+    text-align: center;
+    color: #fff;
+}

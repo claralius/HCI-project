@@ -1,0 +1,207 @@
+@font-face {
+    font-family: Trajan;
+    src: url(Trajan\ Pro.ttf);
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Trajan;
+}
+
+header{
+    font-size: 23px;
+    height: 150px;
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu img{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    list-style-type: none;
+}
+
+#home ,#gameplay ,#merchandise {
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+#home:hover{
+    background-color: #26282b;
+
+}
+
+#gameplay:hover{
+    background-color: #26282b;
+}
+
+#merchandise:hover{
+    background-color: #26282b;
+}
+
+#register{
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: #26282b;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 10px 60px 10px 60px;
+}
+
+.dropdown {
+    padding: 0px;
+    background: black;
+    height: 10%;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    top: 2em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    background-color: #26282b;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #4b4c4e;
+}
+
+.dropdown-wrap{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-wrap:hover .dropdown-menu{
+    display: block;
+}
+
+.texts{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5em;
+    width: 100%;
+}
+
+.texts ul{
+    list-style-type: none;
+}
+
+.devider1, .devider2, .devider3{
+    background: black;
+    text-align: center;
+}
+
+.hero-selection, .last-hitting, .mini-map, .mechanics{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.footer{
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+.text-footer p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+@media (max-width:800px){
+    header{
+        font-size: 20px;
+        height: 180px;
+        background-color: #000000;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10px;
+        padding-bottom: 35px;
+        padding-top: 0px;
+    }
+
+    .menu img{
+        width: 110px;
+        height: 110px;
+        padding-top: 30px;
+    }
+
+    #home ,#gameplay ,#merchandise {
+        padding: 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .texts{
+        display: flex;
+        
+    }
+
+    .texts ul{
+        list-style-type: none;
+    }
+
+
+    #register{
+        display: none;
+    }
+
+    .devider1, .devider2, .devider3{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
